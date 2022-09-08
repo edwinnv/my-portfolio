@@ -12,7 +12,7 @@ const Banner = () => {
           </span>
         </div>
       </div>
-      <div className=" h1">front-end</div>
+      <div className=" h1 w-full text-center">front-end developer</div>
       <div className="h5 mt-2">This is my portfolio WEB!</div>
       <div className="w-full justify-center flex mt-3">
         <button className="btn btn-primary my-4 mr-3 px-4 py-2">
