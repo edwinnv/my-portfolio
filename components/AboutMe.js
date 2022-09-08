@@ -1,27 +1,32 @@
 /* eslint-disable @next/next/no-img-element */
 import Image from 'next/image';
 import React from 'react';
+import arrow from '../public/images/icons/arrow-right.png';
 
 const AboutMe = () => {
   return (
-    <div className="w-full ">
-      <div className="flex bg-border-portofolio mx-[537px] rounded-md p-4">
-        <div className="w-1/4 m-3 rounded-md h-full flex ">
-          <img src={'images/edw.jpeg'} alt={'me'} height={200} />
+    <div className="w-full flex  justify-center mb-[128px] -tablet:mb-[48px]">
+      <div className="flex w-1/2 -tablet:flex-col  mx-20 -tablet:w-full -tablet:mx-0 bg-border-portofolio rounded-md p-4">
+        <div className=" w-1/2 m-3 flex ">
+          <img src={'images/edw.jpeg'} alt={'me'} className="rounded" />
         </div>
-        <div className="w-1/2  text-white body-14-regular pl-4">
-          <div className="h2 pt-2 mb-4">About Me</div>
-          Hola! mi nombre es Edwin y tengo gran afinidad hacía el trabajo
-          colaborativo, me gusta crear diseños que inspiren e involucren a las
-          personas. Como diseñador UI, considero que un buen producto no solo
-          brinda una solución sino que permite crear una experiencia emocional
-          en las personas que lo usan.
+        <div className="w-full  text-white body-14-regular pl-4">
+          <div className=" w-full h2 pt-2 mb-4 font-sans -tablet:h4">
+            About Me
+          </div>
+          Edwin is a front-end developer who builds web apps with React and
+          frameworks like NextJS, as well as state management tools like Redux.
+          He has a wide range of skills, including building user interfaces. He
+          enjoys playing video games and attending dev classes. He enjoys
+          studying new technology and figuring out how to apply them in
+          real-world tasks.
           <div className="mt-4">
             {' '}
-            En mi proceso creativo utilizo herramientas como Figma, Adobe XD,
-            Photoshop e Illustrator que me ayudan en el flujo de trabajo para la
-            producción de interfaces de usuario.
-            <button className="btn btn-secondary mt-3 body-14-regular h-10">Mas acerca de mi</button>
+            ...
+            <button className="btn btn-secondary mt-3 body-14-regular h-10">
+              <span className="mr-2">More about me</span>
+              <Image src={arrow} alt={'arrow'} />
+            </button>
           </div>
         </div>
       </div>

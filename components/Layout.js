@@ -1,16 +1,15 @@
-import React from 'react'
-import Header from './Header'
+import React from 'react';
+import Header from './Header';
 
-const Layout = ({children}) => {
+const Layout = ({ children }) => {
   return (
-	<>
-	<Header/>
-	<main className='w-screen bg-primary-portofolio pb-28'>
-		{children}
-	</main>
-	</>
+    <>
+      <main className="flex flex-col w-full bg-primary-portofolio ">
+        <Header />
+        <div className="flex flex-col px-20 -tablet:px-5  w-full pb-12 z-0 no-scrollbar">{children}</div>
+      </main>
+    </>
+  );
+};
 
-  )
-}
-
-export default Layout
+export default Layout;

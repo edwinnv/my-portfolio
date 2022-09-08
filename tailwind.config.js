@@ -4,6 +4,8 @@ module.exports = {
     extend: {
       fontFamily: {
         poppins: ['Poppins', 'sans-serif'],
+        montserrat: ['Montserrat', 'sans-serif'],
+        dmsans: ['DM Sans', 'sans-serif'],
       },
       maxHeight: {
         accordion: '75rem',
@@ -73,7 +75,8 @@ module.exports = {
         'border-portofolio': '#26292D',
         'purple-portofolio': '#5C62EC',
         'purple-2-portofolio': '#3C40AE',
-
+        'gray-portofolio': '#26292D',
+        'acento-portofolio': '#85BFD1',
       },
       screens: {
         desktop: { min: '1050px' },
@@ -103,6 +106,7 @@ module.exports = {
   plugins: [
     require('@tailwindcss/typography'),
     require('@tailwindcss/forms'),
+    require('tailwind-hamburgers'),
     // ...
   ],
 };

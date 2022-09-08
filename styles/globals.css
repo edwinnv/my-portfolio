@@ -2,13 +2,13 @@
 @tailwind components;
 @tailwind utilities;
 
-@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@500&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=DM+Sans&family=Montserrat&family=Poppins:wght@500&display=swap');
 
 html,
 body {
   padding: 0;
   margin: 0;
-  font-family: Poppins, sans-serif;
+  /* font-family: 'Poppins', sans-serif; */
 }
 
 a {
@@ -26,6 +26,14 @@ input[type='file'] {
 textarea {
   resize: none;
   height: 100px;
+}
+
+.rounded {
+  border-radius: 5px;
+  -webkit-border-radius: 5px;
+  -moz-border-radius: 5px;
+  -ms-border-radius: 5px;
+  -o-border-radius: 5px;
 }
 
 .custom-file-upload {
@@ -52,6 +60,8 @@ input[type='date']::-webkit-calendar-picker-indicator {
 }
 
 @layer components {
+
+  
   .h1 {
     font-size: 52px;
     line-height: 58px;
@@ -90,18 +100,19 @@ input[type='date']::-webkit-calendar-picker-indicator {
 
   .body-14 {
     font-size: 14px;
-    line-height: 22px;
+    line-height: 28px;
     @apply font-semibold;
   }
 
   .body-14-regular {
     font-size: 14px;
     line-height: 22px;
-    @apply font-normal;
+    letter-spacing: 0.8px;
+    @apply font-light;
   }
 
   .btn {
-    @apply flex rounded-lg cursor-pointer justify-center items-center font-poppins text-sm;
+    @apply flex rounded-lg cursor-pointer justify-center items-center font-sans text-sm;
   }
   .btn-sidebar {
     @apply text-white  transition-all duration-200 ease-in-out border-l-2 hover:border-white;
@@ -128,7 +139,7 @@ input[type='date']::-webkit-calendar-picker-indicator {
   }
 
   .btn-dropdown {
-    @apply flex rounded-lg bg-pearl-river-100 cursor-pointer justify-center items-center font-poppins text-xxs;
+    @apply flex rounded-lg bg-pearl-river-100 cursor-pointer justify-center items-center font-sans text-xxs;
   }
   .btn.btn-s {
     @apply px-6 py-1;
