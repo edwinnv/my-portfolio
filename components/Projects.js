@@ -37,12 +37,14 @@ const Projects = () => {
                 key={index}
               >
                 <a href={url} target="_blank" rel="noreferrer">
+                  
                   <Image
                     src={image}
                     alt={'project'}
                     className="rounded"
                     height={1000}
                   />
+
                 </a>
               </div>
             </>
