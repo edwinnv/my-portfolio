@@ -24,7 +24,7 @@ const Header = () => {
         <nav className="flex flex-col w-full h-full  border-b border-b-border-portofolio">
           <div className="flex flex-wrap items-center justify-between h-full px-20 -tablet:px-5">
             <span className="self-center text-white-portofolio h4 font-semibold whitespace-nowrap font-sans">
-              Edwin <span className='text-purple-portofolio'>Portfolio </span>
+              EdwinNv<span className='text-purple-portofolio text-sm'>{'</>'} </span>
             </span>
             <div
               className="hidden md:flex justify-between items-center w-full md:w-auto md:order-1"

@@ -9,7 +9,7 @@ const Footer = () => {
       <div className="w-full text-white  border-t-1 border-b-1 border-gray-portofolio">
         <div className="flex -tablet:flex-col w-full justify-around py-8">
           <span className=" flex text-white font-poppins h2  mb-3 text-center justify-center ">
-            EdwinNv
+            EdwinNv  <span className='text-purple-portofolio text-sm'>{'</>'} </span>
           </span>
 
           <div className="flex flex-col">
