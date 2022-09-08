@@ -1,4 +1,5 @@
 import classNames from 'classnames';
+import Link from 'next/link';
 import React, { useState } from 'react';
 
 const Header = () => {
@@ -23,9 +24,12 @@ const Header = () => {
       <header className=" flex flex-col w-full bg-primary-portofolio h-16  ">
         <nav className="flex flex-col w-full h-full  border-b border-b-border-portofolio">
           <div className="flex flex-wrap items-center justify-between h-full px-20 -tablet:px-5">
-            <span className="self-center text-white-portofolio h4 font-semibold whitespace-nowrap font-sans">
-              EdwinNv<span className='text-purple-portofolio text-sm'>{'</>'} </span>
-            </span>
+            <Link href="/">
+              <span className="self-center text-white-portofolio h4 font-semibold whitespace-nowrap font-sans cursor-pointer">
+                EdwinNv
+                <span className="text-purple-portofolio text-sm">{'</>'} </span>
+              </span>
+            </Link>
             <div
               className="hidden md:flex justify-between items-center w-full md:w-auto md:order-1"
               id="mobile-menu-3"
@@ -34,7 +38,7 @@ const Header = () => {
                 <li>
                   <a
                     href="#"
-                    className=" md:bg-transparent text-white block pl-3 pr-4 py-2 md:text-white md:p-0 rounded"
+                    className=" md:bg-transparent text-white block pl-3 pr-4 py-2 md:text-white md:p-0 rounded hover:text-purple-portofolio"
                     aria-current="page"
                   >
                     Inicio
@@ -43,7 +47,7 @@ const Header = () => {
                 <li>
                   <a
                     href="#"
-                    className=" hover:bg-gray-50 border-b border-gray-100 md:hover:bg-transparent md:border-0 block pl-3 pr-4 py-2 md:text-white md:p-0"
+                    className=" hover:bg-gray-50 border-b border-gray-100 md:hover:bg-transparent md:border-0 block pl-3 pr-4 py-2 md:text-white md:p-0 hover:text-purple-portofolio"
                   >
                     About me
                   </a>
@@ -51,7 +55,7 @@ const Header = () => {
                 <li>
                   <a
                     href="#"
-                    className=" hover:bg-gray-50 border-b border-gray-100 md:hover:bg-transparent md:border-0 block pl-3 pr-4 py-2 md:text-white md:p-0"
+                    className=" hover:bg-gray-50 border-b border-gray-100 md:hover:bg-transparent md:border-0 block pl-3 pr-4 py-2 md:text-white md:p-0 hover:text-purple-portofolio"
                   >
                     Projects
                   </a>
@@ -59,7 +63,7 @@ const Header = () => {
                 <li>
                   <a
                     href="#"
-                    className=" hover:bg-gray-50 border-b border-gray-100 md:hover:bg-transparent md:border-0 block pl-3 pr-4 py-2 md:text-white md:p-0"
+                    className=" hover:bg-gray-50 border-b border-gray-100 md:hover:bg-transparent md:border-0 block pl-3 pr-4 py-2 md:text-white md:p-0 hover:text-purple-portofolio"
                   >
                     Contact
                   </a>
