@@ -1,4 +1,5 @@
 import { AnimatePresence, motion } from 'framer-motion';
+import Link from 'next/link';
 import React from 'react';
 
 const Sidebar = ({ opened, setOpened }) => {
@@ -22,21 +23,28 @@ const Sidebar = ({ opened, setOpened }) => {
             'flex flex-col  pt-5 w-full  h-screen z-50   '
         }`}
             >
-              <a className="flex text-white font-montserrat cursor-pointer hover:text-purple-portofolio">
+              <Link
+                href={`/`}
+                className="flex text-white font-montserrat cursor-pointer hover:text-purple-portofolio"
+              >
                 Home Page
-              </a>
-              <a
+              </Link>
+              <Link
+                href={`/about`}
                 className="flex text-white font-montserrat mt-10 cursor-pointer hover:text-purple-portofolio"
-                href="/about"
               >
                 About Me
-              </a>
-              <a className="flex text-white font-montserrat mt-10 cursor-pointer hover:text-purple-portofolio">
+              </Link>
+              <Link
+              href={`/contact`}
+              className="flex text-white font-montserrat mt-10 cursor-pointer hover:text-purple-portofolio">
                 Projects
-              </a>
-              <a className="flex text-white font-montserrat mt-10 cursor-pointer hover:text-purple-portofolio">
+              </Link>
+              <Link
+              href={`/contact`}
+              className="flex text-white font-montserrat mt-10 cursor-pointer hover:text-purple-portofolio">
                 Contact Me
-              </a>
+              </Link>
             </div>
           </motion.div>
           <motion.div

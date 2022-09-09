@@ -1,5 +1,6 @@
 /* eslint-disable @next/next/no-img-element */
 import Image from 'next/image';
+import Link from 'next/link';
 import React from 'react';
 import arrow from '../public/images/icons/arrow-right.png';
 
@@ -23,10 +24,12 @@ const AboutMe = () => {
           <div className="mt-4">
             {' '}
             ...
-            <a className="btn btn-secondary mt-3 body-14-regular h-10 w-48" href='/about'>
-              <span className="mr-2">More about me</span>
-              <Image src={arrow} alt={'arrow'} />
-            </a>
+            <Link href={`/about`}>
+              <button className="btn btn-secondary mt-3 body-14-regular h-10 w-48">
+                <span className="mr-2">More about me</span>
+                <Image src={arrow} alt={'arrow'} />
+              </button>
+            </Link>
           </div>
         </div>
       </div>
