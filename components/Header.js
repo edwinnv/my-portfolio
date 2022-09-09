@@ -28,7 +28,9 @@ const Header = () => {
             <Link href="/">
               <span className="flex self-center text-white-portofolio h4 font-semibold whitespace-nowrap font-sans cursor-pointer">
                 EdwinNv
-                <span className="flex text-purple-portofolio text-sm ">{'</>'} </span>
+                <span className="flex text-purple-portofolio text-sm ">
+                  {'</>'}{' '}
+                </span>
               </span>
             </Link>
             <div
@@ -37,37 +39,38 @@ const Header = () => {
             >
               <ul className="flex-col md:flex-row flex md:space-x-8 mt-4 md:mt-0 md:text-sm md:font-medium">
                 <li>
-                  <a
-                    href="#"
-                    className=" md:bg-transparent text-white block pl-3 pr-4 py-2 md:text-white md:p-0 rounded hover:text-purple-portofolio"
-                    aria-current="page"
-                  >
-                    Inicio
-                  </a>
+                  <Link href="/">
+                    <span
+                      className=" md:bg-transparent cursor-pointer text-white block pl-3 pr-4 py-2 md:text-white md:p-0 rounded hover:text-purple-portofolio"
+                      aria-current="page"
+                    >
+                      Home Page
+                    </span>
+                  </Link>
                 </li>
                 <li>
-                  <a
-                    href="#"
-                    className=" hover:bg-gray-50 border-b border-gray-100 md:hover:bg-transparent md:border-0 block pl-3 pr-4 py-2 md:text-white md:p-0 hover:text-purple-portofolio"
-                  >
-                    About me
-                  </a>
+                  <Link href="/about">
+                    <span className=" hover:bg-gray-50 border-b cursor-pointer  border-gray-100 md:hover:bg-transparent md:border-0 block pl-3 pr-4 py-2 md:text-white md:p-0 hover:text-purple-portofolio">
+                      About me
+                    </span>
+                  </Link>
                 </li>
                 <li>
-                  <a
-                    href="#"
-                    className=" hover:bg-gray-50 border-b border-gray-100 md:hover:bg-transparent md:border-0 block pl-3 pr-4 py-2 md:text-white md:p-0 hover:text-purple-portofolio"
-                  >
-                    Projects
-                  </a>
+                  <Link href="#">
+                    <span className=" hover:bg-gray-50 border-b cursor-pointer  border-gray-100 md:hover:bg-transparent md:border-0 block pl-3 pr-4 py-2 md:text-white md:p-0 hover:text-purple-portofolio">
+                      Projects
+                    </span>
+                  </Link>
                 </li>
                 <li>
-                  <a
-                    href="#"
-                    className=" hover:bg-gray-50 border-b border-gray-100 md:hover:bg-transparent md:border-0 block pl-3 pr-4 py-2 md:text-white md:p-0 hover:text-purple-portofolio"
-                  >
-                    Contact
-                  </a>
+                  <Link href="#">
+                    <span
+                      href="#"
+                      className=" hover:bg-gray-50 border-b  cursor-pointer border-gray-100 md:hover:bg-transparent md:border-0 block pl-3 pr-4 py-2 md:text-white md:p-0 hover:text-purple-portofolio"
+                    >
+                      Contact
+                    </span>
+                  </Link>
                 </li>
               </ul>
             </div>
@@ -107,7 +110,7 @@ const Header = () => {
           Contact Me
         </a>
       </div> */}
-      <Sidebar opened={opened} setOpened={setOpened}/>
+      <Sidebar opened={opened} setOpened={setOpened} />
     </>
   );
 };

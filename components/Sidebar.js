@@ -23,27 +23,25 @@ const Sidebar = ({ opened, setOpened }) => {
             'flex flex-col  pt-5 w-full  h-screen z-50   '
         }`}
             >
-              <Link
-                href={`/`}
-                className="flex text-white font-montserrat cursor-pointer hover:text-purple-portofolio"
-              >
-                Home Page
+              <Link href={`/`}>
+                <span className="     flex text-white font-montserrat cursor-pointer hover:text-purple-portofolio">
+                  Home Page
+                </span>
               </Link>
-              <Link
-                href={`/about`}
-                className="flex text-white font-montserrat mt-10 cursor-pointer hover:text-purple-portofolio"
-              >
-                About Me
+              <Link href={`/about`}>
+                <span className="flex text-white font-montserrat mt-10 cursor-pointer hover:text-purple-portofolio">
+                  About Me
+                </span>
               </Link>
-              <Link
-              href={`/contact`}
-              className="flex text-white font-montserrat mt-10 cursor-pointer hover:text-purple-portofolio">
-                Projects
+              <Link href={`/contact`}>
+                <span className="flex text-white font-montserrat mt-10 cursor-pointer hover:text-purple-portofolio">
+                  Projects
+                </span>
               </Link>
-              <Link
-              href={`/contact`}
-              className="flex text-white font-montserrat mt-10 cursor-pointer hover:text-purple-portofolio">
-                Contact Me
+              <Link href={`/contact`}>
+                <span className="flex text-white font-montserrat mt-10 cursor-pointer hover:text-purple-portofolio">
+                  Contact Me
+                </span>
               </Link>
             </div>
           </motion.div>
