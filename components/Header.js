@@ -1,6 +1,7 @@
 import classNames from 'classnames';
 import Link from 'next/link';
 import React, { useState } from 'react';
+import Sidebar from './Sidebar';
 
 const Header = () => {
   const [opened, setOpened] = useState(false);
@@ -25,9 +26,9 @@ const Header = () => {
         <nav className="flex flex-col w-full h-full  border-b border-b-border-portofolio">
           <div className="flex flex-wrap items-center justify-between h-full px-20 -tablet:px-5">
             <Link href="/">
-              <span className="self-center text-white-portofolio h4 font-semibold whitespace-nowrap font-sans cursor-pointer">
+              <span className="flex self-center text-white-portofolio h4 font-semibold whitespace-nowrap font-sans cursor-pointer">
                 EdwinNv
-                <span className="text-purple-portofolio text-sm">{'</>'} </span>
+                <span className="flex text-purple-portofolio text-sm ">{'</>'} </span>
               </span>
             </Link>
             <div
@@ -86,7 +87,7 @@ const Header = () => {
           </div>
         </nav>
       </header>
-      <div
+      {/* <div
         className={` ${
           !opened
             ? 'hidden'
@@ -105,7 +106,8 @@ const Header = () => {
         <a className="flex text-white font-montserrat mt-10 cursor-pointer hover:text-purple-portofolio">
           Contact Me
         </a>
-      </div>
+      </div> */}
+      <Sidebar opened={opened} setOpened={setOpened}/>
     </>
   );
 };

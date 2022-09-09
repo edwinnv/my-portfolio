@@ -71,6 +71,7 @@ module.exports = {
       },
       colors: {
         'primary-portofolio': '#171718',
+        'fill-portofolio': '#1C1E22',
         'white-portofolio': '#FFFFFF',
         'border-portofolio': '#26292D',
         'purple-portofolio': '#5C62EC',

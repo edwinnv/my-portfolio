@@ -23,10 +23,10 @@ const AboutMe = () => {
           <div className="mt-4">
             {' '}
             ...
-            <button className="btn btn-secondary mt-3 body-14-regular h-10">
+            <a className="btn btn-secondary mt-3 body-14-regular h-10 w-48" href='/about'>
               <span className="mr-2">More about me</span>
               <Image src={arrow} alt={'arrow'} />
-            </button>
+            </a>
           </div>
         </div>
       </div>

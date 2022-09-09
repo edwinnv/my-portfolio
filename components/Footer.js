@@ -51,7 +51,7 @@ const Footer = () => {
           </div>
         </div>
       </div>
-      <span className="text-white font-sans w-full mt-3">
+      <span className="text-white font-sans w-full mt-3 pb-4">
         © 2022 Edwin Nuñez{' '}
       </span>
     </div>
