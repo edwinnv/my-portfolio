@@ -1,3 +1,4 @@
+import Link from 'next/link';
 import React from 'react';
 
 const Banner = () => {
@@ -19,7 +20,9 @@ const Banner = () => {
           See Projects
         </button>
         <button className="btn btn-secondary my-4 px-4 py-2">
-          Download CV
+          <a href="/curriculum.pdf" target="_blank" >
+            Download CV
+          </a>
         </button>
       </div>
     </div>

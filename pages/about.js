@@ -1,7 +1,7 @@
 import Image from 'next/image';
 import React from 'react';
 import Layout from '../components/Layout';
-import profile from '../public/images/edw.jpeg';
+import profile from '../public/images/edw.jpg';
 import { motion } from 'framer-motion';
 import { FaReact, FaGitAlt } from 'react-icons/fa';
 import {
@@ -11,8 +11,6 @@ import {
   SiNextdotjs,
 } from 'react-icons/si';
 import { AiFillHtml5 } from 'react-icons/ai';
-import { GrGatsbyjs } from 'react-icons/gr';
-import { DiNodejsSmall } from 'react-icons/di';
 import { FaCss3Alt } from 'react-icons/fa';
 
 function About() {
@@ -102,6 +100,9 @@ function About() {
 
   return (
     <Layout>
+      <header>
+        <title>About Me</title>
+      </header>
       <div className="h-full flex flex-col">
         <div className=" m-3 flex ">
           <Image src={profile} alt={'me'} className="rounded" />
@@ -110,20 +111,15 @@ function About() {
           <span className="h3 text-white ">Edwin Nuñez</span>
           <span className="text-white font-light mt-4">
             <span className="flex mb-5">
-              Soy Diseñador UI, actualmente vivo en Turbaco-Bolivar, un pueblo a
-              las afueras de Cartagena (Colombia).
+              Edwin is a front-end developer who builds web apps with React and
+              frameworks like NextJS, as well as state management tools like
+              Redux. He has a wide range of skills, including building user
+              interfaces. He also keeps improving his basic skills on Ruby on
+              Rails.
             </span>
-            Me agrada la idea de trabajar en equipo, pienso que es una manera de
-            conectar con nuevas habilidades y de brindar mi conocimiento al
-            equipo con el fin de mejorar la productividad en el desarrollo de
-            algun producto digital. Me gusta descubrir cosas nuevas a diario y
-            ser un activo valioso en cualquier equipo en el que me desarrolle,
-            por lo que estoy aprendiendo constantemente e investigando acerca de
-            las nuevas tendencias. Trato de buscar todo el Feedback posible en
-            los proyectos, con el fin de mejorar y poder hacer diseños que no
-            solo sean atractivos esteticamente sino que sean accesibles y
-            funcionales por lo que me gusta trabajar muy de la mano con los
-            stakeholders. Hablemos!
+            In his leisure time, he enjoys playing video games and attending dev
+            classes. He enjoys studying new technology and figuring out how to
+            apply them in real-world tasks.
             <a
               className="flex mt-4 underline text-purple-portofolio "
               href="mailto:edwinjunior2000@outlook.com"

@@ -81,8 +81,8 @@ module.exports = {
       },
       screens: {
         desktop: { min: '1050px' },
-        tablet: { min: '750px' },
-        '-tablet': { max: '750px' },
+        tablet: { min: '900px' },
+        '-tablet': { max: '900px' },
       },
     },
     container: {

@@ -8,8 +8,8 @@ const AboutMe = () => {
   return (
     <div className="w-full flex  justify-center mb-[128px] -tablet:mb-[48px]">
       <div className="flex w-1/2 -tablet:flex-col  mx-20 -tablet:w-full -tablet:mx-0 bg-border-portofolio rounded-md p-4">
-        <div className=" w-1/2 m-3 flex ">
-          <img src={'images/edw.jpeg'} alt={'me'} className="rounded" />
+        <div className="m-3 flex h-72 w-72 -tablet:w-full -tablet:h-full -tablet:m-0">
+          <img src={'images/edw.jpg'} alt={'me'} className="rounded" />
         </div>
         <div className="w-full  text-white body-14-regular pl-4">
           <div className=" w-full h2 pt-2 mb-4 font-sans -tablet:h4">

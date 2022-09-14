@@ -34,7 +34,7 @@ const Header = () => {
               </span>
             </Link>
             <div
-              className="hidden md:flex justify-between items-center w-full md:w-auto md:order-1"
+              className="hidden md:flex justify-between items-center w-full md:w-auto md:order-1 -tablet:hidden"
               id="mobile-menu-3"
             >
               <ul className="flex-col md:flex-row flex md:space-x-8 mt-4 md:mt-0 md:text-sm md:font-medium">
