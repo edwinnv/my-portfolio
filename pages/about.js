@@ -104,8 +104,8 @@ function About() {
         <title>About Me</title>
       </header>
       <div className="h-full flex flex-col">
-        <div className=" m-3 flex ">
-          <Image src={profile} alt={'me'} className="rounded" />
+        <div className=" m-3 flex  ">
+          <Image src={profile} alt={'me'} className="rounded" width={400} height={600} />
         </div>
         <div className="ml-2 mt-2 flex flex-col">
           <span className="h3 text-white ">Edwin Nuñez</span>
