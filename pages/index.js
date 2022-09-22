@@ -13,8 +13,10 @@ export default function Home() {
       </Head>
       <Layout>
         <Banner />
-        <AboutMe />
-        <Projects />
+        <div className="px-20 -tablet:px-5">
+          <AboutMe />
+          <Projects />
+        </div>
       </Layout>
     </>
   );

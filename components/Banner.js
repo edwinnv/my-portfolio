@@ -1,9 +1,10 @@
 import Link from 'next/link';
 import React from 'react';
+import Wave from 'react-wavify';
 
 const Banner = () => {
   return (
-    <div className="h-[512px] flex  text-white items-center justify-center flex-col mb-32 -tablet:mb-20 -z-10">
+    <div className="h-[532px] flex  text-white items-center justify-center flex-col mb-32 -tablet:mb-20 z-10">
       <div className="flex w-full justify-center items-center text-center">
         <div className="h1 font-sans w-full ">
           I{`'`}m{' '}
@@ -20,10 +21,22 @@ const Banner = () => {
           See Projects
         </button>
         <button className="btn btn-secondary my-4 px-4 py-2">
-          <a href="/curriculum.pdf" target="_blank" >
+          <a href="/curriculum.pdf" target="_blank">
             Download CV
           </a>
         </button>
+      </div>
+      <div className={'w-full'}>
+        <Wave
+          fill="#5C62EC"
+          paused={false}
+          options={{
+            height: 20,
+            amplitude: 30,
+            speed: 0.35,
+            points: 3,
+          }}
+        />
       </div>
     </div>
   );
