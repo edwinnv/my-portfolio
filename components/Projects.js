@@ -3,7 +3,6 @@ import treeApp from '../public/images/treeapp.png';
 import makers from '../public/images/makers.png';
 import warehouse from '../public/images/warehouse.png';
 import arrow from '../public/images/icons/arrow-right.png';
-
 import Image from 'next/image';
 
 const Projects = () => {

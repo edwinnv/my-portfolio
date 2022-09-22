@@ -4,6 +4,7 @@ import Layout from '../components/Layout';
 import profile from '../public/images/edw.jpg';
 import { motion } from 'framer-motion';
 import { FaReact, FaGitAlt } from 'react-icons/fa';
+import { SiTypescript } from 'react-icons/si';
 import {
   SiRedux,
   SiTailwindcss,
@@ -12,6 +13,7 @@ import {
 } from 'react-icons/si';
 import { AiFillHtml5 } from 'react-icons/ai';
 import { FaCss3Alt } from 'react-icons/fa';
+import hygraphcms from '/public/images/logos/hygraphcms.webp';
 
 function About() {
   const skills = [
@@ -24,6 +26,7 @@ function About() {
           title="react"
         />
       ),
+      title: 'React Js',
     },
     {
       icon: (
@@ -34,6 +37,7 @@ function About() {
           title="react"
         />
       ),
+      title: 'Redux',
     },
 
     {
@@ -45,6 +49,7 @@ function About() {
           title="react"
         />
       ),
+      title: 'Tailwindcss',
     },
     {
       icon: (
@@ -55,6 +60,7 @@ function About() {
           title="react"
         />
       ),
+      title: 'GIT',
     },
     {
       icon: (
@@ -65,6 +71,7 @@ function About() {
           title="react"
         />
       ),
+      title: 'Javascript',
     },
     {
       icon: (
@@ -75,6 +82,7 @@ function About() {
           title="react"
         />
       ),
+      title: 'HTML',
     },
     {
       icon: (
@@ -85,6 +93,7 @@ function About() {
           title="react"
         />
       ),
+      title: 'CSS',
     },
     {
       icon: (
@@ -95,6 +104,22 @@ function About() {
           title="react"
         />
       ),
+      title: 'NextJS',
+    },
+    {
+      icon: <Image src={hygraphcms} alt="cms" width={100} height={100} />,
+      title: 'Hygraphcms',
+    },
+    {
+      icon: (
+        <SiTypescript
+          className="w-full "
+          size={'100'}
+          color={'#2F74C0'}
+          title="react"
+        />
+      ),
+      title: 'Typescript',
     },
   ];
 
@@ -103,9 +128,15 @@ function About() {
       <header>
         <title>About Me</title>
       </header>
-      <div className="h-full flex flex-col">
+      <div className="h-full flex flex-col items-center ">
         <div className=" m-3 flex  ">
-          <Image src={profile} alt={'me'} className="rounded" width={400} height={600} />
+          <Image
+            src={profile}
+            alt={'me'}
+            className="rounded"
+            width={400}
+            height={600}
+          />
         </div>
         <div className="ml-2 mt-2 flex flex-col">
           <span className="h3 text-white ">Edwin Nuñez</span>
@@ -131,12 +162,12 @@ function About() {
         <div className="h4 text-white w-full text-center my-5">
           My top skills
         </div>
-        <div className=" grid grid-cols-2  w-full justify-center items-center">
-          {skills.map(({ icon }, index) => {
+        <div className=" grid grid-cols-4 -tablet:grid-cols-2  w-1/2 -tablet:w-full justify-center items-center">
+          {skills.map(({ icon, title }, index) => {
             return (
               <div
                 key={index}
-                className=" flex justify-center items-center w-32 h-28 bg-fill-portofolio rounded-lg mx-4 my-4 justify-items-center justify-self-center"
+                className=" flex justify-center items-center w-32 h-36 bg-fill-portofolio rounded-lg mx-4 my-4  justify-items-center justify-self-center"
               >
                 <motion.div
                   style={{
@@ -144,9 +175,11 @@ function About() {
                   }}
                   animate={{ rotate: 360 }}
                   transition={{ duration: 2 }}
-                  className={'flex'}
+                  className={'flex  flex-col  items-center justify-center '}
+                  title={title}
                 >
                   {icon}
+                  <span className="text-white ">{title}</span>
                 </motion.div>
               </div>
             );

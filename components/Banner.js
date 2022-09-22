@@ -4,7 +4,7 @@ import Wave from 'react-wavify';
 
 const Banner = () => {
   return (
-    <div className="h-[532px] flex  text-white items-center justify-center flex-col mb-32 -tablet:mb-20 z-10">
+    <div className="h-[532px] flex  text-white items-center justify-center flex-col mb- -tablet:mb-20 z-10">
       <div className="flex w-full justify-center items-center text-center">
         <div className="h1 font-sans w-full ">
           I{`'`}m{' '}
@@ -31,10 +31,10 @@ const Banner = () => {
           fill="#5C62EC"
           paused={false}
           options={{
-            height: 20,
-            amplitude: 30,
+            height: 5,
+            amplitude: 20,
             speed: 0.35,
-            points: 3,
+            points: 4,
           }}
         />
       </div>
