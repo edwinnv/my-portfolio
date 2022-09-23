@@ -128,38 +128,41 @@ function About() {
       <header>
         <title>About Me</title>
       </header>
-      <div className="h-full flex flex-col items-center ">
-        <div className=" m-3 flex  ">
-          <Image
-            src={profile}
-            alt={'me'}
-            className="rounded"
-            width={400}
-            height={600}
-          />
-        </div>
-        <div className="ml-2 mt-2 flex flex-col">
-          <span className="h3 text-white ">Edwin Nuñez</span>
-          <span className="text-white font-light mt-4">
-            <span className="flex mb-5">
-              Edwin is a front-end developer who builds web apps with React and
-              frameworks like NextJS, as well as state management tools like
-              Redux. He has a wide range of skills, including building user
-              interfaces. He also keeps improving his basic skills on Ruby on
-              Rails.
+      <div className=" w-full h-full flex flex-col items-center pt-20 ">
+        <div className="flex -tablet:flex-col items-center">
+          <div className=" w-1/2 m-3 flex mx-20 items-center justify-center">
+            <Image
+              src={profile}
+              alt={'me'}
+              className="rounded"
+              height={500}
+              width={350}
+            />
+          </div>
+          <div className="  w-1/2 -tablet:w-full mt-2 flex px-8 flex-col ">
+            <span className="h3 text-white ">Edwin Nuñez</span>
+            <span className="text-white font-light mt-4">
+              <span className="flex mb-5">
+                Edwin is a front-end developer who builds web apps with React
+                and frameworks like NextJS, as well as state management tools
+                like Redux. He has a wide range of skills, including building
+                user interfaces. He also keeps improving his basic skills on
+                Ruby on Rails.
+              </span>
+              In his leisure time, he enjoys playing video games and attending
+              dev classes. He enjoys studying new technology and figuring out
+              how to apply them in real-world tasks.
+              <a
+                className="flex mt-4 underline text-purple-portofolio "
+                href="mailto:edwinjunior2000@outlook.com"
+              >
+                edwinjunior2000@outlook.com{' '}
+              </a>
             </span>
-            In his leisure time, he enjoys playing video games and attending dev
-            classes. He enjoys studying new technology and figuring out how to
-            apply them in real-world tasks.
-            <a
-              className="flex mt-4 underline text-purple-portofolio "
-              href="mailto:edwinjunior2000@outlook.com"
-            >
-              edwinjunior2000@outlook.com{' '}
-            </a>
-          </span>
+          </div>
         </div>
-        <div className="h4 text-white w-full text-center my-5">
+
+        <div className="h4 text-white w-full text-center my-5 pt-20 ">
           My top skills
         </div>
         <div className=" grid grid-cols-4 -tablet:grid-cols-2  w-1/2 -tablet:w-full justify-center items-center">

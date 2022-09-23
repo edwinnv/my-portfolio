@@ -13,7 +13,7 @@ export default function Home() {
       </Head>
       <Layout>
         <Banner />
-        <div className="px-20 -tablet:px-5">
+        <div className="px-20 -tablet:px-5 ">
           <AboutMe />
           <Projects />
         </div>

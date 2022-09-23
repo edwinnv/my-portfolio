@@ -1,12 +1,11 @@
-import Link from 'next/link';
 import React from 'react';
 import Wave from 'react-wavify';
 
 const Banner = () => {
   return (
-    <div className="h-[532px] flex  text-white items-center justify-center flex-col mb- -tablet:mb-20 z-10">
+    <div className="h-[532px] flex  text-white items-center justify-center flex-col mb- -tablet:mb-20 z-10 pt-32">
       <div className="flex w-full justify-center items-center text-center">
-        <div className="h1 font-sans w-full ">
+        <div className="h1 font-sans w-full px-9">
           I{`'`}m{' '}
           <span className="  w-full text-purple-portofolio h1">
             {' '}

@@ -77,6 +77,7 @@ module.exports = {
         'purple-portofolio': '#5C62EC',
         'purple-2-portofolio': '#3C40AE',
         'gray-portofolio': '#26292D',
+        'gray-form': '#A0A0A1',
         'acento-portofolio': '#85BFD1',
       },
       screens: {

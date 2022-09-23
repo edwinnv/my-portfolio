@@ -22,7 +22,7 @@ const Header = () => {
 
   return (
     <>
-      <header className=" flex flex-col w-full bg-primary-portofolio h-16  ">
+      <header className=" flex flex-col w-full bg-primary-portofolio h-16 fixed z-10  ">
         <nav className="flex flex-col w-full h-full  border-b border-b-border-portofolio">
           <div className="flex flex-wrap items-center justify-between h-full px-20 -tablet:px-5">
             <Link href="/">
@@ -63,11 +63,8 @@ const Header = () => {
                   </Link>
                 </li>
                 <li>
-                  <Link href="#">
-                    <span
-                      href="#"
-                      className=" hover:bg-gray-50 border-b  cursor-pointer border-gray-100 md:hover:bg-transparent md:border-0 block pl-3 pr-4 py-2 md:text-white md:p-0 hover:text-purple-portofolio"
-                    >
+                  <Link href="/contact">
+                    <span className=" hover:bg-gray-50 border-b  cursor-pointer border-gray-100 md:hover:bg-transparent md:border-0 block pl-3 pr-4 py-2 md:text-white md:p-0 hover:text-purple-portofolio">
                       Contact
                     </span>
                   </Link>
