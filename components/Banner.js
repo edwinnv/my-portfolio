@@ -30,10 +30,10 @@ const Banner = () => {
           fill="#5C62EC"
           paused={false}
           options={{
-            height: 5,
+            height: 20,
             amplitude: 20,
             speed: 0.35,
-            points: 4,
+            points: 2,
           }}
         />
       </div>

@@ -44,7 +44,7 @@ const Header = () => {
                       className=" md:bg-transparent cursor-pointer text-white block pl-3 pr-4 py-2 md:text-white md:p-0 rounded hover:text-purple-portofolio"
                       aria-current="page"
                     >
-                      Home Page
+                      Home
                     </span>
                   </Link>
                 </li>
@@ -55,13 +55,7 @@ const Header = () => {
                     </span>
                   </Link>
                 </li>
-                <li>
-                  <Link href="#">
-                    <span className=" hover:bg-gray-50 border-b cursor-pointer  border-gray-100 md:hover:bg-transparent md:border-0 block pl-3 pr-4 py-2 md:text-white md:p-0 hover:text-purple-portofolio">
-                      Projects
-                    </span>
-                  </Link>
-                </li>
+
                 <li>
                   <Link href="/contact">
                     <span className=" hover:bg-gray-50 border-b  cursor-pointer border-gray-100 md:hover:bg-transparent md:border-0 block pl-3 pr-4 py-2 md:text-white md:p-0 hover:text-purple-portofolio">

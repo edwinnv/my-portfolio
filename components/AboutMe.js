@@ -7,8 +7,8 @@ import arrow from '../public/images/icons/arrow-right.png';
 const AboutMe = () => {
   return (
     <div className="w-full flex  justify-center mb-[128px] -tablet:mb-[48px] pt-12">
-      <div className="flex w-1/2 -tablet:flex-col  mx-20 -tablet:w-full -tablet:mx-0 bg-border-portofolio rounded-md p-4">
-        <div className="m-3 flex h-72 w-72 -tablet:w-full -tablet:h-full -tablet:m-0">
+      <div className="flex w-1/2 -tablet:flex-col   -tablet:w-full -tablet:mx-0 bg-border-portofolio rounded-md p-4">
+        <div className="m-3 flex h-72 w-full -tablet:w-full -tablet:h-full -tablet:m-0">
           <img src={'images/edw.jpg'} alt={'me'} className="rounded" />
         </div>
         <div className="w-full  text-white body-14-regular pl-4">

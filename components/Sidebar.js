@@ -25,17 +25,12 @@ const Sidebar = ({ opened, setOpened }) => {
             >
               <Link href={`/`}>
                 <span className="     flex text-white font-montserrat cursor-pointer hover:text-purple-portofolio">
-                  Home Page
+                  Home
                 </span>
               </Link>
               <Link href={`/about`}>
                 <span className="flex text-white font-montserrat mt-10 cursor-pointer hover:text-purple-portofolio">
                   About Me
-                </span>
-              </Link>
-              <Link href={`/contact`}>
-                <span className="flex text-white font-montserrat mt-10 cursor-pointer hover:text-purple-portofolio">
-                  Projects
                 </span>
               </Link>
               <Link href={`/contact`}>

@@ -9,7 +9,7 @@ const Projects = () => {
   const projects = [
     {
       nameProject: 'TreeApp',
-      url: 'https://cofai-arbolapp.herokuapp.com/',
+      url: 'https://treeapp.co/',
       image: treeApp,
     },
     {
@@ -25,8 +25,7 @@ const Projects = () => {
   ];
   return (
     <>
-      <div className="text-white h3 pb-4">Projects</div>
-
+      <div className="text-white h4 pb-4 ">Projects</div>
       <div className=" w-full flex flex-col items-center">
         {projects.map(({ image, url }, index) => {
           return (
@@ -36,14 +35,12 @@ const Projects = () => {
                 key={index}
               >
                 <a href={url} target="_blank" rel="noreferrer">
-                  
                   <Image
                     src={image}
                     alt={'project'}
                     className="rounded"
                     height={1000}
                   />
-
                 </a>
               </div>
             </>

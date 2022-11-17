@@ -14,6 +14,7 @@ import {
 import { AiFillHtml5 } from 'react-icons/ai';
 import { FaCss3Alt } from 'react-icons/fa';
 import hygraphcms from '/public/images/logos/hygraphcms.webp';
+import Head from 'next/head';
 
 function About() {
   const skills = [
@@ -125,12 +126,16 @@ function About() {
 
   return (
     <Layout>
+      <Head>
+        <title>About Me</title>
+        <link rel="icon" href="/favicon.ico" />
+      </Head>
       <header>
         <title>About Me</title>
       </header>
       <div className=" w-full h-full flex flex-col items-center pt-20 ">
         <div className="flex -tablet:flex-col items-center">
-          <div className=" w-1/2 m-3 flex mx-20 items-center justify-center">
+          <div className=" w-1/2 m-3 flex mx-0 items-center justify-end">
             <Image
               src={profile}
               alt={'me'}
@@ -140,23 +145,32 @@ function About() {
             />
           </div>
           <div className="  w-1/2 -tablet:w-full mt-2 flex px-8 flex-col ">
-            <span className="h3 text-white ">Edwin Nuñez</span>
-            <span className="text-white font-light mt-4">
+            <span className="h3-title  text-white mt-10 ">Edwin Nuñez</span>
+            <span className="text-white font-light mt-20 -tablet:w-full w-1/2 -tablet:mt-10">
               <span className="flex mb-5">
                 Edwin is a front-end developer who builds web apps with React
                 and frameworks like NextJS, as well as state management tools
-                like Redux. He has a wide range of skills, including building
-                user interfaces. He also keeps improving his basic skills on
-                Ruby on Rails.
+                like Redux. He has a wide range of skills, including designing,
+                building and implementing user interfaces besides a good English
+                level due to previous experience working with native speakers
+                from USA and UK.
               </span>
-              In his leisure time, he enjoys playing video games and attending
-              dev classes. He enjoys studying new technology and figuring out
-              how to apply them in real-world tasks.
+              He enjoys playing video games and attending dev classes. He enjoys
+              studying new technology and figuring out how to apply them in
+              real-world tasks.
+              <span className="flex mt-5">
+                {`I like the idea of working in a team, I think ${`it's`} a way to
+                  connect with new skills and bring my knowledge to the team to
+                  improve productivity in the development of any digital product.
+                  I like to discover new things every day and be a valuable asset
+                  in any team in which I develop, so I am constantly learning and`}
+                researching new technologies.
+              </span>
               <a
                 className="flex mt-4 underline text-purple-portofolio "
                 href="mailto:edwinjunior2000@outlook.com"
               >
-                edwinjunior2000@outlook.com{' '}
+                Edwinjunior2000@outlook.com{' '}
               </a>
             </span>
           </div>
